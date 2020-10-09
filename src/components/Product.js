@@ -9,7 +9,10 @@ const Product = props => {
 
 			<p className="price">${props.product.price}</p>
 
-			<button onClick={() => props.addItem(props.product)}>
+			<button onClick={() => {
+				console.log('clicked')
+				props.addItem(props.product)
+			}}>
 				Add to cart
 			</button>
 		</div>
